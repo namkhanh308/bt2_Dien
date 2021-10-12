@@ -79,7 +79,12 @@ public class main {
                     break;
                 case 3:
                     System.out.println("Chức năng hiển thị danh sách khách hàng: ");
-                    manager.displayGuest();
+                    if(manager.getGuests().size() == 0){
+                        System.out.println("Không có khách hàng nào");
+                    }
+                    else {
+                        manager.displayGuest();
+                    }
                     break;
                 case 4:
                     System.out.println("Chức năng hiển thị danh sách biên lai khách hàng: ");
